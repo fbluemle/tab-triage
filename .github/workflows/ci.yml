@@ -1,0 +1,11 @@
+name: ci
+on:
+  push:
+    branches: [master]
+  pull_request:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: fbactions/git-diff-check@v1
