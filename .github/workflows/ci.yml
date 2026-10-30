@@ -9,3 +9,5 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - uses: fbactions/git-diff-check@v1
+      - run: for f in *.js; do node --check "$f"; done
+      - run: node -e 'JSON.parse(require("fs").readFileSync("manifest.json", "utf8"))'
