@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Tab Triage",
-  "version": "1.0",
+  "version": "1.0.0",
   "minimum_chrome_version": "121",
   "description": "Filter and group open tabs and find candidates to close.",
   "permissions": ["tabs", "storage"],
